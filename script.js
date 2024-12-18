@@ -9,7 +9,6 @@ async function handlesubmision() {
   const delayValue = parseInt(document.getElementById('delay').value);
   const outputDiv = document.getElementById('output');
 
-
 	 if (!text) {
     outputDiv.textContent = "Please enter some text.";
     return;
@@ -19,7 +18,7 @@ async function handlesubmision() {
     return;
   }
 
-	  outputDiv.textContent = "Waiting...";
+	  outputDiv.textContent = "";
 
 	  await delay(delayValue);
 	  outputDiv.textContent = text;
